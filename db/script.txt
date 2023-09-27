@@ -1,0 +1,40 @@
+
+CREATE DATABASE ordenesDb;
+
+USE ordenesDb;
+
+
+CREATE TABLE estados(
+
+       id INT AUTO_INCREMENT PRIMARY KEY,
+        nombre VARCHAR(50), 
+)
+
+CREATE TABLE ordenes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nro INT,
+    fecha DATE,
+    hora TIME,
+    idEstado INT
+    FOREIGN KEY (idEstado) REFERENCES estados(id)
+);
+
+CREATE TABLE usuarios (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(100),
+    email VARCHAR(100),
+    password VARCHAR(255)
+);
+
+INSERT INTO usuarios (nombre, email, password) 
+VALUES ('Juan Francisco fernandez', 'jfernandez@gmail.com', md5('cualquier_cosa'));
+
+
+CREATE TABLE novedades (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    titulo VARCHAR(100),
+    contenido TEXT,
+    fecha DATE
+);
+INSERT INTO novedades (titulo, contenido, fecha) 
+VALUES ('Campeonato de truco', 'Aca va la descripcion del campeonato de truco', '2023-07-22');
