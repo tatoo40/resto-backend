@@ -10,7 +10,7 @@
     "username": "doadmin",
     "password": "AVNS_nBVS3bB_iMfsbgiV9vU",
     "database": "ordenesDb",
-    "host": "db-mysql-nyc3-75302-do-user-14322278-0.b.db.ondigitalocean.comhost",
+    "host": "db-mysql-nyc3-75302-do-user-14322278-0.b.db.ondigitalocean.com",
     "dialect": "mysql"
   },
   "production": {
