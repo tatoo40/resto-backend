@@ -1,13 +1,12 @@
 const { Sequelize } = require('sequelize');
 
-const sequelize = new Sequelize({
-  dialect: process.env.MYSQLDIALECT, // u otro dialecto, dependiendo de tu base de datos
-  username: process.env.MYSQLUSER,
-  password: process.env.MYSQLPASSWORD,
-  host: process.env.MYSQLHOST, // o la dirección de tu servidor de base de datos
-  database: process.env.MYSQLDATABASE,
 
-});
+const sequelize = new Sequelize(process.env.MYSQLDATABASE , process.env.MYSQLUSER, process.env.MYSQLPASSWORD, {
+  host: process.env.MYSQLHOST,
+  dialect: process.env.MYSQLDIALECT,
+  port: process.env.MYSQLPORT
+  });
+
 
 module.exports = sequelize;
 
