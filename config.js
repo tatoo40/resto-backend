@@ -1,8 +1,8 @@
 const { Sequelize } = require('sequelize');
 
 
-const sequelize = new Sequelize(process.env.MYSQLDATABASE , process.env.MYSQLUSER, process.env.MYSQLPASSWORD, {
-  host: process.env.MYSQLHOST,
+const sequelize = new Sequelize('ordenesDb', 'doadmin', 'AVNS_nBVS3bB_iMfsbgiV9vU', {
+  host: 'db-mysql-nyc3-75302-do-user-14322278-0.b.db.ondigitalocean.com',
   dialect: 'mysql',
   port: '25060'
   });
