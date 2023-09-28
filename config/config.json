@@ -1,23 +1,23 @@
 {
   "development": {
-    "username": "root",
-    "password": "Gardel2615",
+    "username": "doadmin",
+    "password": "AVNS_nBVS3bB_iMfsbgiV9vU",
     "database": "ordenesDb",
-    "host": "localhost",
+    "host": "db-mysql-nyc3-75302-do-user-14322278-0.b.db.ondigitalocean.com",
     "dialect": "mysql"
   },
   "test": {
-    "username": "root",
-    "password": "Gardel2615",
+    "username": "doadmin",
+    "password": "AVNS_nBVS3bB_iMfsbgiV9vU",
     "database": "ordenesDb",
-    "host": "localhost",
+    "host": "db-mysql-nyc3-75302-do-user-14322278-0.b.db.ondigitalocean.comhost",
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": "Gardel2615",
+    "username": "doadmin",
+    "password": "AVNS_nBVS3bB_iMfsbgiV9vU",
     "database": "ordenesDb",
-    "host": "localhost",
+    "host": "db-mysql-nyc3-75302-do-user-14322278-0.b.db.ondigitalocean.com",
     "dialect": "mysql"
   }
 }
